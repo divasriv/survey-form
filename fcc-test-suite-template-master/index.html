@@ -12,20 +12,34 @@
     <form id="survey-form">
       <p>What is your name?</p>
       <label id="name-label">
-      <input id="name" type="text" required>
+      <input id="name" type="text" placeholder="Your Number" required>
     </label>
       <p>What is your email?</p>
       <label id="email-label">
-      <input id="email" type="email" required>
+      <input id="email" type="email" placeholder="Your Email" required>
       </label>
 
       <p>What is your phone number? (Optional)</p>
       <label id="number-label">
-      <input id="number" type="number" min="7" max="12" >
+      <input id="number" type="number" min="7" max="12" placeholder="Phone Number">
       </label>
-      
-
-
+      <p>Is it your first time filling this form?</p>
+      <select id="dropdown">
+        <option value="True">Yes</option>
+        <option value="False">No</option>
+      </select>
+      <p>Are you satisfied with your experience?</p>
+      <input type="radio" name="experience" value="Yes"> Yes
+      <input type="radio" name="experience" value="No"> No
+      <p>Select things your didn't like about the form</p>
+      <input type="checkbox" name="Unliked" value="1"> 1
+      <input type="checkbox" name="Unliked" value="2"> 2
+      <input type="checkbox" name="Unliked" value="3"> 3
+      <input type="checkbox" name="Unliked" value="4"> 4
+      <input type="checkbox" name="Unliked" value="5"> 5
+      <p>Any additional comments</p>
+      <textarea placeholder="Enter Comments"></textarea>
+      <button type="button" id="submit">Submit</button>
 
 
     </form>
