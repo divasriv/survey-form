@@ -2,29 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <h1 id="title">Our Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="div">
     <form id="survey-form">
-      <p>What is your name?</p>
-      <label id="name-label">
+      
+      <label id="name-label">What is your name?
       <input id="name" type="text" placeholder="Your Number" required>
     </label>
-      <p>What is your email?</p>
-      <label id="email-label">
+      <label id="email-label">What is your email?
       <input id="email" type="email" placeholder="Your Email" required>
       </label>
 
-      <p>What is your phone number? (Optional)</p>
-      <label id="number-label">
+      <label id="number-label">What is your phone number? (Optional)
       <input id="number" type="number" min="7" max="12" placeholder="Phone Number">
       </label>
       <p>Is it your first time filling this form?</p>
       <select id="dropdown">
+        <option value="" disabled selected>Select a value</option>
         <option value="True">Yes</option>
         <option value="False">No</option>
       </select>
@@ -39,9 +39,10 @@
       <input type="checkbox" name="Unliked" value="5"> 5
       <p>Any additional comments</p>
       <textarea placeholder="Enter Comments"></textarea>
-      <button type="button" id="submit">Submit</button>
+      <button type="submit" id="submit">Submit</button>
 
 
     </form>
+    </div>
   </body>
 </html>
